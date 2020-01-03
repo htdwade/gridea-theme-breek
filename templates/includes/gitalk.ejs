@@ -1,9 +1,17 @@
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
 
 <div id="gitalk-container"></div>
 
 <script>
+
+  var valine = new Valine();
+  valine.init({
+          appId: '<%= site.customConfig.valineID %>' ,
+          appKey: '<%= site.customConfig.valineKey %>',
+          visitor: <%= site.customConfig.visitors %> // 阅读量统计
+  })
 
   var gitalk = new Gitalk({
     clientID: '<%= commentSetting.gitalkSetting.clientId %>',

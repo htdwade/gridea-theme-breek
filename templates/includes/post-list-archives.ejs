@@ -2,7 +2,7 @@
 
 
 <div class="main-article post">
-  <h2 class="year">共 <%= site.posts.length %> 篇文章</h2>
+  <h2 class="year">共 <%= site.posts.length - 1 %> 篇文章</h2>
 <% years.forEach(function(year) { %>
     <h2 class="year"><%- year %></h2>
     <% posts.forEach(function(post) { %>
