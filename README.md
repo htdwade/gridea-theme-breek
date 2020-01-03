@@ -62,5 +62,7 @@ https://i.immmmm.com/post/gridea-theme-breek/
     c={API_BASE_URL:"https://bm.weajs.com/api/",DB_BASE_URL:"https://book.douban.com/subject/",
     ```
 6. BMDB插件 secret申请
+
     同步豆瓣看过的书籍，电影
+    
     https://bm.weajs.com/
