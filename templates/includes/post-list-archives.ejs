@@ -12,7 +12,7 @@
           <span class="fullimage cover" style="display: block;background-image: url('<% if (post.feature) { %><%= post.feature %><% } else if (post.tags[0]) { %><%= themeConfig.domain %>/media/images/<%= post.tags[0].slug %>.jpg<% } else { %><%= themeConfig.domain %>/media/images/gridea.jpg<%} %>');"></span>
         </a>
         <div class="info gradient-effect">
-          <time datetime="<%= post.dateFormat %>"><%= site.utils.moment(post.date).locale('zh-cn').fromNow() %></time>
+          <time datetime="<%= post.dateFormat %>"><%= post.dateFormat %></time>
           <h4 class="title usmall">
             <a href="<%= post.link %>"><%= post.title %></a>
           </h4>

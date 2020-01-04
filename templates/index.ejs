@@ -20,7 +20,7 @@
                 <div id="single" class="fullcover" style="">
                    <div class="featured-image cover" style="background-image: url('<% if (post.feature) { %><%= post.feature %><% } else if (post.tags[0]) { %><%= themeConfig.domain %>/media/images/<%= post.tags[0].slug %>.jpg<% } else { %><%= themeConfig.domain %>/media/images/gridea.jpg<%} %>');">
                     <div class="meta top"> 
-                      <time class="meta-info" style="float:left;" datetime="<%= post.dateFormat %>"><i class="fa fa-calendar"></i><span class="lately"><%= site.utils.moment(post.date).locale('zh-cn').fromNow() %></span></time>
+                      <time class="meta-info" style="float:left;" datetime="<%= post.dateFormat %>"><i class="fa fa-calendar"></i><span class="lately"><%= post.dateFormat %></span></time>
                     </div>
                     <div class="info">
                       <div class="tags ">
@@ -43,7 +43,7 @@
                       </div>
                     <% }; %>
                     <div class="meta">
-                      <time datetime="<%= post.dateFormat %>"><i class="fa fa-calendar"></i><span class="lately"><%= site.utils.moment(post.date).locale('zh-cn').fromNow() %></span></time>
+                      <time datetime="<%= post.dateFormat %>"><i class="fa fa-calendar"></i><span class="lately"><%= post.dateFormat %></span></time>
                       <div class="clear"></div>
                     </div>
                     <h1 class="title main-title gradient-effect"><a href="<%= post.link %>"><%= post.title %></a></h1>
@@ -78,7 +78,7 @@
                       </div>
                     </div>                    
                     <div class="meta">
-                      <time datetime="<%= post.dateFormat %>"><i class="fa fa-calendar"></i><span class="lately"><%= site.utils.moment(post.date).locale('zh-cn').fromNow() %></span></time>
+                      <time datetime="<%= post.dateFormat %>"><i class="fa fa-calendar"></i><span class="lately"><%= post.dateFormat %></span></time>
                       <div class="clear"></div>
                     </div>
 

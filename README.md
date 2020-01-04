@@ -66,3 +66,6 @@ https://i.immmmm.com/post/gridea-theme-breek/
     同步豆瓣看过的书籍，电影
     
     https://bm.weajs.com/
+
+7. 修改时间显示样式
+    `post.dateFormat`
